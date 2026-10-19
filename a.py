@@ -1,6 +1,8 @@
 from textblob import TextBlob
+import colorama 
+from colorama import Style, Fore 
 
-print('Welcome to the Emotion Detector!')
+print(F'{Fore.CYAN} Welcome to the Emotion Detector!{Style.RESET_ALL}')
 name = input("Enter your name: ").strip() or 'Mystery Agent'
 print(f"Hello, Agent {name}, nice to meet you.")
 
